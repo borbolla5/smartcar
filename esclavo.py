@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from interrupcion import Interrupt
 from pwm import PWM
-from rgb import RGB
+#from rgb import RGB
 #from mysql import Database
 from pid import PID
 from excel import Excel
@@ -87,16 +87,7 @@ if __name__ == '__main__':
                     GPIO.cleanup()
          
 
-	'''
-        diferencia = carro.lectura_der.avance-carro.lectura_izq.avance
-	print diferencia
-        if diferencia < 0:
-            while diferencia != 0:
-                carro.lectura_izq.setup(100)
 
-        else:
-            while diferencia !=0:
-                carro.lectura_der.setup(100)'''
 
 	#carro.ssh.desconectar()	
 	GPIO.cleanup()
